@@ -1,1 +1,40 @@
-🧪 Aloe Vera Bioactive Extraction Optimizer: A Circular Economy Approach💎 Project Overview & Intellectual PropertyThis project is the digital implementation of a patented extraction process (of which I am a co-inventor) designed to valorize Aloe vera processing by-products. By transforming the discarded rind—often a waste in the gel industry—into a high-value cosmetic ingredient, this work bridges the gap between Circular Bioeconomy and Data Science.The model is based on the research published in:Añibarro-Ortega, M., et al. (2021). Extraction of Aloesin from Aloe vera Rind Using Alternative Green Solvents: Process Optimization and Biological Activity Assessment. Biology, 10(10), 951. https://doi.org/10.3390/biology10100951🌿 Scientific BackgroundThe industrial processing of Aloe vera (L.) Burm. f. generates vast amounts of rind as a byproduct. However, this rind is a rich source of aloesin, a C-glycosylated chromone with potent anti-tyrosinase activity.Key Innovations:Green Chemistry: Replacement of traditional organic solvents with "Generally Recognized as Safe" (GRAS) alternative solvents: Ethanol, Propylene Glycol, and Glycerol.Target Bioactivity: The resulting extracts are optimized for skin-depigmenting formulations due to their high phenolic content and enzyme-inhibiting properties.Digital Scalability: This app uses Response Surface Methodology (RSM) and Reduced Cubic Models to predict yields, allowing for precise industrial scale-up without further trial-and-error.📊 Technical MethodologyThe optimization was performed using a Central Composite Circumscribed Design (CCRD). The application models the interaction of three critical process variables:Time ($t$): 10–210 minTemperature ($T$): 25–95 °CSolvent Concentration ($S$): 0–100 % (w/v)Optimization Table (Validated Models)Solvent SystemTime (min)Temp (°C)Solvent (%)Max Yield (mg/g)R2Ethanol/Water59.056.40.045.440.968Propylene Glycol/Water10.090.70.061.330.596Glycerol/Water10.025.08.259.260.650🚀 Business & Industrial ImpactWaste Valorization: Converts a low-cost byproduct into a high-margin cosmetic active.Sustainability (ESG): Reduces environmental footprint by using eco-friendly solvents and optimizing energy consumption (Time/Temperature).Proven Innovation: The underlying process is patented, ensuring a unique competitive advantage in the dermocosmetic market.🛠️ Tech StackPython 3.xStreamlit (Interactive UI)Statsmodels (OLS Regression & Cubic Modeling)Plotly (3D Surface Visualization)
+# 🧪 Aloe Vera Bioactive Extraction Optimizer: A Circular Bioeconomy Approach
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](TU_LINK_DE_STREAMLIT_AQUI)
+
+## 💎 Project Overview & Intellectual Property
+This project showcases the digital transformation of a **patented extraction process** (of which I am a co-inventor) designed to valorize *Aloe vera* processing by-products. By applying **Circular Economy** principles, we transform discarded Aloe rind into a high-value cosmetic ingredient.
+
+### Key Innovations:
+* **Patented Technology:** Co-inventor of the industrial method for standardized aloesin extraction.
+* **Green Chemistry:** Optimized use of "Generally Recognized as Safe" (GRAS) alternative solvents: Ethanol, Propylene Glycol, and Glycerol.
+* **Target Bioactivity:** Extracts optimized for skin-depigmenting formulations due to their potent **anti-tyrosinase activity**.
+
+## 🌿 Scientific Background
+The industrial processing of *Aloe vera* (L.) Burm. f. generates vast amounts of rind as a byproduct. This project uses **Response Surface Methodology (RSM)** to bridge the gap between laboratory research and industrial application.
+
+> **Reference:** [Añibarro-Ortega, M., et al. (2021). *Biology*, 10(10), 951.](https://doi.org/10.3390/biology10100951)
+
+## 📊 Technical Methodology
+The optimization was performed using a **Central Composite Circumscribed Design (CCRD)**. The application models the interaction of three critical process variables:
+1. **Time** ($t$): 10–210 min
+2. **Temperature** ($T$): 25–95 °C
+3. **Solvent Concentration** ($S$): 0–100 % (w/v)
+
+### Validated Optimization Models
+| Solvent System | Time (min) | Temp (°C) | Solvent (%) | Max Yield (mg/g) | $R^2$ |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Ethanol/Water** | 59.0 | 56.4 | 0.0 | 45.44 | 0.968 |
+| **Propylene Glycol/Water** | 10.0 | 90.7 | 0.0 | 61.33 | 0.596 |
+| **Glycerol/Water** | 10.0 | 25.0 | 8.2 | 59.26 | 0.650 |
+
+## 🚀 Business & Industrial Impact
+* **Waste Valorization:** Converts a low-cost byproduct into a high-margin cosmetic active.
+* **Cost Reduction:** Identifies precise T/t thresholds to optimize ROI and energy consumption.
+* **Proven Innovation:** Based on a patented process, ensuring a unique competitive advantage.
+
+## 🛠️ Tech Stack
+* **Python 3.x**
+* **Streamlit** (Interactive Dashboard)
+* **Statsmodels** (OLS Regression & Cubic Modeling)
+* **Plotly** (3D Surface Visualization)
