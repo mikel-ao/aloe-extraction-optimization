@@ -7,6 +7,7 @@ This project showcases the digital transformation of a **patented extraction pro
 
 ### Key Innovations:
 * **Patented Technology:** Co-inventor of the industrial method for standardized aloesin extraction.
+   🔗 [**Open Patent**](https://bibliotecadigital.ipb.pt/entities/publication/8920c345-be5f-428e-a336-db9ca26c4b81)
 * **Green Chemistry:** Optimized use of "Generally Recognized as Safe" (GRAS) alternative solvents: Ethanol, Propylene Glycol, and Glycerol.
 * **Target Bioactivity:** Extracts optimized for skin-depigmenting formulations due to their potent **anti-tyrosinase activity**.
 
