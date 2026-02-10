@@ -28,6 +28,7 @@ Process Variables:
 3. **Solvent Concentration** ($S$): 0–100 % (w/w)
 
 ### Validated Optimization Models
+
 | Solvent System | Time (min) | Temp (°C) | Solvent (%) | Max Yield_{pred} (mg/L) | Max Yield_{exp} (mg/L) | $R^2_{adj}$ |
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | **Ethanol/Water** | 92.9 | 55.9 | 0.0 | 48 $\pm$ 1 | 51 $\pm$ 1 | 0.9862 |
