@@ -14,16 +14,23 @@ Adjust the parameters in the sidebar to explore the response surfaces.
 """)
 
 # --- DATA LOADING ---
-@st.cache_data # This keeps the app fast
-def load_data():
-    df = pd.read_csv('ccd_aloe.csv')
-    # Pre-coding
-    df['t_cod'] = (df['time'] - 110) / 60
-    df['T_cod'] = (df['temp'] - 60) / 21
-    df['S_cod'] = (df['solvent'] - 50) / 30
-    return df
+# Replace the URL below with your actual GitHub Raw URL
+GITHUB_RAW_URL = "https://raw.githubusercontent.com/mikel-ao/aloe-extraction-optimization/refs/heads/main/ccd_aloe.csv"
 
-df = load_data()
+@st.cache_data # This keeps the app fast by storing the data in memory
+def load_data(url):
+    try:
+        df = pd.read_csv(url)
+        # Pre-coding for the statistical model
+        df['t_cod'] = (df['time'] - 110) / 60
+        df['T_cod'] = (df['temp'] - 60) / 20
+        df['S_cod'] = (df['solvent'] - 50) / 30
+        return df
+    except Exception as e:
+        st.error(f"Error loading data from GitHub: {e}")
+        st.stop()
+
+df = load_data(GITHUB_RAW_URL)
 
 # --- SIDEBAR CONTROLS ---
 st.sidebar.header("Control Panel")
@@ -76,7 +83,7 @@ def get_plot_data(fixed_mode):
 
     # Coding for prediction
     pdf['t_cod'] = (pdf['time'] - 110) / 60
-    pdf['T_cod'] = (pdf['temp'] - 60) / 21
+    pdf['T_cod'] = (pdf['temp'] - 60) / 20  # Fixed to match load_data scaling (20, not 21)
     pdf['S_cod'] = (pdf['solvent'] - 50) / 30
     Z = model.predict(pdf).values.reshape(X.shape)
     return X, Y, Z, xt, yt
