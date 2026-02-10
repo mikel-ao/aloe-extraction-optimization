@@ -29,11 +29,11 @@ Process Variables:
 
 ### Validated Optimization Models
 
-| Solvent System | Time (min) | Temp (°C) | Solvent (%) | Max Yield$_{pred}$ (mg/g) | Max Yield$_{exp}$ (mg/g) | $R^2_{adj}$ |
+| Solvent System | Time (min) | Temp (°C) | Solvent (%) | Max Yield<sub>pred</sub> (mg/g) | Max Yield<sub>exp</sub> (mg/g) | R<sup>2</sup><sub>adj</sub> |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Ethanol/Water** | 92.9 | 55.9 | 0.0 | 48 $\pm$ 1 | 51 $\pm$ 1 | 0.9862 |
-| **Propylene Glycol/Water** | 12.0 | 60.6 | 51.1 | 63 $\pm$ 1 | 65 $\pm$ 1 | 0.8976 |
-| **Glycerol/Water** | 42.2 | 56.8 | 17.5 | 57 $\pm$ 1 | 61 $\pm$ 1 | 0.8699 |
+| **Ethanol/Water** | 92.9 | 55.9 | 0.0 | 48 &plusmn; 1 | 51 &plusmn; 1 | 0.9862 |
+| **Propylene Glycol/Water** | 12.0 | 60.6 | 51.1 | 63 &plusmn; 1 | 65 &plusmn; 1 | 0.8976 |
+| **Glycerol/Water** | 42.2 | 56.8 | 17.5 | 57 &plusmn; 1 | 61 &plusmn; 1 | 0.8699 |
 
 ## 🚀 Business & Industrial Impact
 * **Waste Valorization:** Converts a low-cost byproduct into a high-margin cosmetic active.
