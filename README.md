@@ -5,7 +5,7 @@
 ### 🚀 **Interactive Tool: Get Started Here**
 > **Click the button below to launch the optimization dashboard and explore the response surfaces.**
 >
-> [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]((https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://aloe-extraction-optimization.streamlit.app/))
+> [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]((https://static.streamlit.io/badges/streamlit_badge_black_white.svg)(https://aloe-extraction-optimization.streamlit.app/))
 > 
 > 📍 *Note: For the best experience, use a desktop browser to interact with the 3D models.*
 
