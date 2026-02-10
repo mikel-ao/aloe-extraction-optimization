@@ -1,6 +1,15 @@
 # 🧪 Aloe Vera Bioactive Extraction Optimizer: A Circular Bioeconomy Approach
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://aloe-extraction-optimization.streamlit.app/)
+---
+
+### 🚀 **Interactive Tool: Get Started Here**
+> **Click the button below to launch the optimization dashboard and explore the response surfaces.**
+>
+> [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]((https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://aloe-extraction-optimization.streamlit.app/))
+> 
+> 📍 *Note: For the best experience, use a desktop browser to interact with the 3D models.*
+
+---
 
 ## 💎 Project Overview & Intellectual Property
 This project showcases the digital transformation of a **patented extraction process** (of which I am a co-inventor) designed to valorize *Aloe vera* processing by-products. By applying **Circular Economy** principles, we transform discarded Aloe rind into a high-value cosmetic ingredient.
