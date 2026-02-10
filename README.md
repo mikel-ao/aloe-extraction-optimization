@@ -29,7 +29,7 @@ Process Variables:
 
 ### Validated Optimization Models
 
-| Solvent System | Time (min) | Temp (°C) | Solvent (%) | Max Yield<sub>pred</sub> (mg/g) | Max Yield<sub>exp</sub> (mg/g) | R<sup>2</sup><sub>adj</sub> |
+| Solvent System | Time (min) | Temp (°C) | Solvent (%) | Max Yield<sub>(pred)</sub> (mg/g) | Max Yield<sub>(exp)</sub> (mg/g) | R<sup>2</sup><sub>adj</sub> |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | **Ethanol/Water** | 92.9 | 55.9 | 0.0 | 48 &plusmn; 1 | 51 &plusmn; 1 | 0.9862 |
 | **Propylene Glycol/Water** | 12.0 | 60.6 | 51.1 | 63 &plusmn; 1 | 65 &plusmn; 1 | 0.8976 |
