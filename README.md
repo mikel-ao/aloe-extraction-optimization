@@ -17,17 +17,22 @@ The industrial processing of *Aloe vera* (L.) Burm. f. generates vast amounts of
 > **Reference:** [Añibarro-Ortega, M., et al. (2021). *Biology*, 10(10), 951.](https://doi.org/10.3390/biology10100951)
 
 ## 📊 Technical Methodology
-The optimization was performed using a **Central Composite Circumscribed Design (CCRD)**. The application models the interaction of three critical process variables:
+The optimization was performed using a Central Composite Circumscribed Design (CCRD) to maximize the recovery of Aloesin, which was precisely quantified using HPLC-DAD-ESI/MS^n.
+
+Target Response:
+Aloesin Content: Measured in mg/g of extract.
+
+Process Variables:
 1. **Time** ($t$): 10–210 min
 2. **Temperature** ($T$): 25–95 °C
-3. **Solvent Concentration** ($S$): 0–100 % (w/v)
+3. **Solvent Concentration** ($S$): 0–100 % (w/w)
 
 ### Validated Optimization Models
-| Solvent System | Time (min) | Temp (°C) | Solvent (%) | Max Yield (mg/g) | $R^2$ |
+| Solvent System | Time (min) | Temp (°C) | Solvent (%) | Max Yield_{pred} (mg/L) | Max Yield_{exp} (mg/L) | $R^2_{adj}$ |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Ethanol/Water** | 59.0 | 56.4 | 0.0 | 45.44 | 0.968 |
-| **Propylene Glycol/Water** | 10.0 | 90.7 | 0.0 | 61.33 | 0.596 |
-| **Glycerol/Water** | 10.0 | 25.0 | 8.2 | 59.26 | 0.650 |
+| **Ethanol/Water** | 92.9 | 55.9 | 0.0 | 48 $\pm$ 1 | 51 $\pm$ 1 | 0.9862 |
+| **Propylene Glycol/Water** | 12.0 | 60.6 | 51.1 | 63 $\pm$ 1 | 65 $\pm$ 1 | 0.8976 |
+| **Glycerol/Water** | 42.2 | 56.8 | 17.5 | 57 $\pm$ 1 | 61 $\pm$ 1 | 0.8699 |
 
 ## 🚀 Business & Industrial Impact
 * **Waste Valorization:** Converts a low-cost byproduct into a high-margin cosmetic active.
