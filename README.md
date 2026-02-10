@@ -26,7 +26,7 @@ The industrial processing of *Aloe vera* (L.) Burm. f. generates vast amounts of
 > **Reference:** [Añibarro-Ortega, M., et al. (2021). *Biology*, 10(10), 951.](https://doi.org/10.3390/biology10100951)
 
 ## 📊 Technical Methodology
-The optimization was performed using a Central Composite Circumscribed Design (CCRD) to maximize the recovery of Aloesin, which was precisely quantified using **HPLC-DAD-ESI/MS<sup>n</sup>**.
+The optimization was performed using a Central Composite Rotatable Design (CCRD) to maximize the recovery of Aloesin, which was precisely quantified using **HPLC-DAD-ESI/MS<sup>n</sup>**.
 
 Target Response:
 Aloesin Content: Expressed in mg/g of extract.
