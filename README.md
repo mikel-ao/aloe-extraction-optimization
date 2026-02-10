@@ -12,7 +12,7 @@
 ---
 
 ## 💎 Project Overview & Intellectual Property
-This project showcases the digital transformation of a **patented extraction process** (of which I am a co-inventor) designed to valorize *Aloe vera* processing by-products. By applying **Circular Economy** principles, we transform discarded Aloe rind into a high-value cosmetic ingredient.
+This project showcases the digital transformation of a **patented extraction process** designed to valorize *Aloe vera* processing by-products. By applying **Circular Economy** principles, we transform discarded Aloe rind into a high-value cosmetic ingredient.
 
 ### Key Innovations:
 * **Patented Technology:** Co-inventor of the industrial method for standardized aloesin extraction.
