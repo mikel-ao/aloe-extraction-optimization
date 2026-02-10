@@ -107,4 +107,50 @@ with col2:
     st.metric("Max Yield in View", f"{Z.max():.2f} mg/L")
     st.info(f"Currently viewing the interaction between **{xlabel}** and **{ylabel}**.")
 
+
 st.success("Analysis based on Article-Validated Reduced Cubic Model.")
+
+# --- FEATURE IMPORTANCE ---
+st.markdown("---")
+st.subheader(f"🎯 Factor Impact Analysis: {solvent_choice.upper()}")
+
+# Extract coefficients (excluding the Intercept)
+# We use absolute values to show magnitude of impact
+coefs = model.params.drop('Intercept')
+coef_df = pd.DataFrame({
+    'Feature': coefs.index,
+    'Importance': coefs.values,
+    'AbsImportance': np.abs(coefs.values)
+}).sort_values(by='AbsImportance', ascending=True)
+
+# Map coded names to human-readable names
+name_map = {
+    't_cod': 'Time', 'T_cod': 'Temperature', 'S_cod': 'Solvent %',
+    'I(t_cod ** 2)': 'Time²', 'I(T_cod ** 2)': 'Temp²',
+    't_cod:T_cod': 'Time:Temp', 't_cod:S_cod': 'Time:Solvent',
+    'I(t_cod ** 2):S_cod': 'Time²:Solvent', 't_cod:I(T_cod ** 2)': 'Time:Temp²',
+    'I(t_cod ** 2):I(T_cod ** 2)': 'Time²:Temp²'
+}
+coef_df['Feature'] = coef_df['Feature'].map(name_map)
+
+fig_imp = go.Figure(go.Bar(
+    x=coef_df['Importance'],
+    y=coef_df['Feature'],
+    orientation='h',
+    marker=dict(color=coef_df['Importance'], colorscale='Viridis')
+))
+
+fig_imp.update_layout(
+    title="Model Coefficients (Coded Units)",
+    xaxis_title="Coefficient Magnitude (Impact)",
+    yaxis_title="Process Factors & Interactions",
+    height=400,
+    template="plotly_dark"
+)
+
+st.plotly_chart(fig_imp, use_container_width=True)
+
+st.info("""
+**Interpretation:** Larger bars (positive or negative) indicate a stronger influence on Aloesin yield. 
+Since variables are coded, we can directly compare the weight of each factor and its interactions.
+""")
