@@ -14,15 +14,26 @@ import statsmodels.formula.api as smf
 from plotly.subplots import make_subplots
 import plotly.graph_objects as go
 import os
+import streamlit as st
 
 # 1. DATA LOADING & PRE-PROCESSING
-base_path = os.path.dirname(os.path.abspath(__file__))
-file_path = os.path.join(base_path, 'ccd_aloe.csv')
+GITHUB_RAW_URL = "https://raw.githubusercontent.com/mikel-ao/aloe-extraction-optimization/refs/heads/main/ccd_aloe.csv"
 
-if not os.path.exists(file_path):
-    raise FileNotFoundError("Please ensure 'ccd_aloe.csv' is in the script directory.")
+@st.cache_data
+def load_data(url):
+    """
+    Fetch data directly from the GitHub repository.
+    Uses @st.cache_data to prevent redundant downloads and improve performance.
+    """
+    try:
+        data = pd.read_csv(url)
+        return data
+    except Exception as e:
+        st.error(f"Critical Error: Unable to retrieve data from GitHub. {e}")
+        st.stop()
 
-df = pd.read_csv(file_path)
+# Load the dataset
+df = load_data(GITHUB_RAW_URL)
 
 # Coding Variables (CCRD Standard)
 df['t_cod'] = (df['time'] - 110) / 60
